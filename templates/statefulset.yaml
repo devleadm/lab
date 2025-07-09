@@ -41,6 +41,10 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+        - name: www-data
+          persistentVolumeClaim:
+            claimName: www-data
       {{- with .Values.affinity }}
       affinity:
         {{- toYaml . | nindent 8 }}
@@ -49,7 +53,3 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      volumes:
-        - name: www-data
-        persistentVolumeClaim:
-          claimName: www-data
