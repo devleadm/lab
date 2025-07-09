@@ -7,6 +7,6 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: "standard"
+  storageClassName: ""
   hostPath:
     path: "/mnt/data/"
