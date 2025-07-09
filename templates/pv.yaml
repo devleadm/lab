@@ -8,4 +8,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: ""
-  hostPath: /mnt/data/
+  hostPath: "/mnt/data/"
