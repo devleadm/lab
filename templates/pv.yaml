@@ -8,4 +8,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: ""
-  hostPath: "/var/lib/pv-data"
+  hostPath: /mnt/data/
